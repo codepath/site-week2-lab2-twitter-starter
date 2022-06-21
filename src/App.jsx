@@ -9,6 +9,7 @@ import { useState } from "react"
 export default function App() {
 
   const [userProfile, setUserProfile] = useState(codepathUserProfile);
+  const [tweets, setTweets] = useState([firstTweet]);
 
   return (
     <div className="app">
@@ -19,7 +20,11 @@ export default function App() {
         <UserProfile 
           userProfile={userProfile}
           />
-        <Feed />
+        <Feed 
+          tweets={tweets}
+          setTweets={setTweets}
+          userProfile={userProfile}
+          />
         <Advertisements />
       </main>
     </div>
