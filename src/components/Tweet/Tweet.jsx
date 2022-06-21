@@ -11,9 +11,9 @@ export default function Tweet({ tweet }) {
       </div>
 
       <div className="tweet-content">
-        <TweetUserInfo />
-        <p className="tweet-text"></p>
-        <TweetFooter />
+        <TweetUserInfo name={ tweet.name } handle={ tweet.handle } />
+        <p className="tweet-text">{ tweet.text }</p>
+        <TweetFooter numComments={ tweet.numComments } numRetweets={ tweet.numRetweets } numLikes={ tweet.numLikes } />
       </div>
     </div>
   )

@@ -11,7 +11,7 @@ export default function App() {
       <Navbar navLinks={ navLinks } />
       <main>
         <UserProfile userProfile={ codepathUserProfile } />
-        <Feed />
+        <Feed tweets = { [firstTweet] } />
         <Advertisements />
       </main>
     </div>

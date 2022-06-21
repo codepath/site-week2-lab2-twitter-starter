@@ -15,7 +15,7 @@ export default function Feed(props) {
         </p>
       </div>
 
-      <div className="twitter-feed">{/* ADD CODE HERE */}</div>
+      <div className="twitter-feed">{props.tweets.map((tweet) => <Tweet tweet={ tweet } key={ `tweet` + tweet.id } />)}</div>
     </div>
   )
 }
