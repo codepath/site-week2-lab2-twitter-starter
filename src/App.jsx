@@ -10,7 +10,7 @@ export default function App() {
     <div className="app">
       <Navbar navLinks={ navLinks } />
       <main>
-        <UserProfile />
+        <UserProfile userProfile={ codepathUserProfile } />
         <Feed />
         <Advertisements />
       </main>
