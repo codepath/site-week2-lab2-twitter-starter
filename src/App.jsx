@@ -1,4 +1,3 @@
-import * as React from "react"
 import Feed from "./components/Feed/Feed"
 import Navbar from "./components/Navbar/Navbar"
 import UserProfile from "./components/UserProfile/UserProfile"
